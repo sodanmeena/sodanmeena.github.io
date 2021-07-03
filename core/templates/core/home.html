@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+ <div class="text-center">
+  <img src="{% static 'core/images/sodan.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+ </div>
+ <div class="mt-5 text-white mx-5 text-justify">
+  <h1 class="font-weight-bold st-font">Hello,</h1>
+  <div class="px-4" style="line-height:2rem;">
+   <p style="text-indent:100px;"> I am <b class="text-warning">Sodan Meena</b> Full Stack Software Developer seeking to find the opportunity to work in software industry to improve my skills and growth a industrial value</p>
+   <p>To obtain a responsible, challenging and awarding position in a software development organization with an established track record where my skills abilities and technical abilities can be utilized.</p>
+   <P>Since earning my bachelor’s degree in B.tech Computer Science from <b class="text-warning">Rajiv gandhi Technical University</b> at <b class="text-warning">Scope College Of Engineering</b> ,I have served as a web developer </p>
+
+  </div>
+ </div>
+ <div class="text-center">
+  <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+ </div>
+</div>
+{% endblock content %}
